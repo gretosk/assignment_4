@@ -1,28 +1,31 @@
 import 'dart:convert';
 import 'dart:io';
 
-
-void main(){
-
-  List<int> grades = new List<int>();
-
-  print('How many students do you want to grade');
+import 'package:test/expect.dart';
 
 
-  //int nrOfStudents = int.parse(stdin.readLineSync());
+void main() {
+  List<int> list = new List<int>();
 
-  int totalGrade = 0;
-
-  int gradeToAdd = int.parse(stdin.readLineSync());
-
-  for(int i = 0; i < nrOfStudents; i++){
+  int number1 = 3;
 
 
-    //nrOfStudents.add(gradeToAdd);
+  print('input numbers');
+  for (var i = 0; i <number1; i++) {
+    int input;
+
+    input = int.tryParse(stdin.readLineSync());
+    if (input == null ) {
+
+    }
+
+    list.add(input);
 
   }
 
-  print(nrOfStudents);
+  print(list);
+  print('Largest number is: ${list.reduce((a, b) => a > b ? a : b)}');
 
 
 }
+

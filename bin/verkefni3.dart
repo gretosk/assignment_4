@@ -7,15 +7,17 @@ import 'package:test/expect.dart';
 void main() {
   List<int> list = new List<int>();
 
-  int number1 = 55;
+  int number1 = 5;
 
 
   print('input numbers');
-  for (var i = 0; i <number1; i++) {
+  for (int i = 0; i <number1; i++) {
     int input;
 
-    input = int.tryParse(stdin.readLineSync());
-    while (input != null ) {
+    do {
+      input = int.tryParse(stdin.readLineSync());
+    }while (input == null ); {
+
 
     }
 

@@ -18,7 +18,6 @@ void main() {
       input = int.tryParse(stdin.readLineSync());
     }while (input == null ); {
 
-
     }
 
     list.add(input);

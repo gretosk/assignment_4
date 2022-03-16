@@ -7,7 +7,7 @@ import 'package:test/expect.dart';
 void main() {
   List<int> list = new List<int>();
 
-  int number1 = 3;
+  int number1 = 55;
 
 
   print('input numbers');
@@ -15,7 +15,7 @@ void main() {
     int input;
 
     input = int.tryParse(stdin.readLineSync());
-    if (input == null ) {
+    while (input != null ) {
 
     }
 
